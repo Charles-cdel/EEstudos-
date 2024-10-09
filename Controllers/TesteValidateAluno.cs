@@ -16,6 +16,15 @@ public class ModelsController : Controller
         {
             return View (aluno);
         }
+
+        var ms = ModelState;
+
+        var erros = ModelState.Select(x => x.Value.Errors)
+                                    .Where(y => y.Count > 0)
+                                    .ToList();
+                                    
+        erros.ForEach( r => Console.WriteLine(r.First().ErrorMessage));
+
         return View();
     }
 }
