@@ -1,4 +1,4 @@
-namespace TesteMvc.Models;
+namespace PrimeiraApp.Models;
 
 public class ErrorViewModel
 {

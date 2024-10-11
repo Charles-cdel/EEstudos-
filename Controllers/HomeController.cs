@@ -1,8 +1,8 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TesteMvc.Models;
+using PrimeiraApp.Models;
 
-namespace TesteMvc.Controllers;
+namespace PrimeiraApp.Controllers;
 
 public class HomeController : Controller
 {
@@ -16,7 +16,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         return View();
-    }// Metodo que retorna algo(View Index)
+    }
 
     public IActionResult Privacy()
     {
